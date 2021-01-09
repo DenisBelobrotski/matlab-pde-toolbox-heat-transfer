@@ -3,3 +3,10 @@
 [онлайн гайд по PDE, стр. 2-16](https://www.yumpu.com/en/document/read/12103823/partial-differential-equation-toolbox-users-guide)
 
 [коэффициенты pde](https://www.mathworks.com/help/pde/ug/specify-coefficients-in-pdemodeler-app.html)
+
+Чтобы найти максимальную температуру, можно сделать Solve->Export solution, а потом с решением делать что угодно, найти max, например.
+
+maxValue = max(u, [], 'all');
+где u - решение PDE, экспортированное из PDE Toolbox.
+
+Для экспорта решения в csv можно сделать `writematrix(u,'solution.csv')` для v.2019+ или `csvwrite('solution.csv', u)` для v.2018-. Далее, чтобы Excel нормально распарсил файл, нужно заменить `,` на `;`.
