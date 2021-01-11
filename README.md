@@ -10,3 +10,34 @@ maxValue = max(u, [], 'all');
 где u - решение PDE, экспортированное из PDE Toolbox.
 
 Для экспорта решения в csv можно сделать `writematrix(u,'solution.csv')` для v.2019+ или `csvwrite('solution.csv', u)` для v.2018-. Далее, чтобы Excel нормально распарсил файл, нужно заменить `,` на `;`.
+
+[Heat equation](https://en.wikipedia.org/wiki/Heat_equation)
+
+[Задача Неймана (Neumann boundary condition)](https://en.wikipedia.org/wiki/Neumann_boundary_condition)
+
+[Задача Дирихле (Dirichlet boundary condition)](https://en.wikipedia.org/wiki/Dirichlet_boundary_condition)
+
+[Elliptic partial differential equation](https://en.wikipedia.org/wiki/Elliptic_partial_differential_equation)
+* стационарные процессы, описываемые параболическими и гиперболическими уравнениями
+* уравнение Пуассона
+* уравнение Лапласса
+
+[Parabolic partial differential equation](https://en.wikipedia.org/wiki/Parabolic_partial_differential_equation)
+* конвекция
+* диффузия
+* теплопроводность
+
+[Hyperbolic partial differential equation](https://en.wikipedia.org/wiki/Hyperbolic_partial_differential_equation)
+* волновые уравнения
+* уравнение Максвелла, электромагнитные поля
+
+условие Дирихле - температура на границе
+* h = 1, r = temperature
+
+условие Неймана - тепловой поток
+* q - 0, g - heat transfer coefficient
+* q - surrounding temperature, g - surrounding temperature * heat transfer coefficient
+
+[Relative tolerance](https://www.mathworks.com/help/simulink/gui/relative-tolerance.html)
+
+[Absolute tolerance](https://www.mathworks.com/help/simulink/gui/absolute-tolerance.html)
